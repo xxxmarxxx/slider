@@ -5,7 +5,7 @@ import data from "./data";
 import people from "./data";
 // lesson 112/113/114/115/116/117
 function App() {
-  const [poeple, setPeople] = useState(data);
+  const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function App() {
         </h2>
       </div>
       <div className="section-center">
-        {poeple.map((person, personIndex) => {
+        {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;
           // more stuff coming up
           let position = "nextSlide";
@@ -42,7 +42,7 @@ function App() {
           }
           if (
             personIndex === index - 1 ||
-            (index === 0 && personIndex === poeple.length - 1)
+            (index === 0 && personIndex === people.length - 1)
           ) {
             position = "lastSlide";
           }
