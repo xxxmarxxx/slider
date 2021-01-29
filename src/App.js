@@ -3,6 +3,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 import people from "./data";
+// lesson 112/113/114/115/116/117
 function App() {
   const [poeple, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
